@@ -1,3 +1,8 @@
+body {
+  background-color: #fff;
+  color: #353a44;
+}
+
 .App {
   text-align: center;
 }
@@ -7,6 +12,338 @@
   pointer-events: none;
 }
 
+.btn-toggle {
+  border: none;
+  background: #060e3d;
+  padding: 15px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.digital-display {
+  display: block;
+  /* background-color: #353a44; */
+  color: #fff;
+  width: 70%;
+  height: 30px;
+  padding: 5px;
+  position: relative;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-family: monospace;
+}
+
+.device-card {
+  margin: 50px;
+}
+
+.side-panel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-right: 2px solid #fff;
+  color: #fff;
+  width: 20%;
+  background-color: #060e3d;
+  z-index: 100;
+}
+
+.side-panel ul {
+  margin-top: 30%;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.side-panel ul li {
+  height: 80px;
+  cursor: pointer;
+  align-items: center;
+  text-align: left;
+  padding-left: 20px;
+  display: flex;
+}
+
+.side-panel ul li:hover {
+  background-color: #353a44;
+}
+
+.side-panel ul li.active {
+  border-left: 2px solid #fff;
+}
+
+.main-content {
+  position: absolute;
+  left: 20%;
+  top: 0;
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding: 20px;
+  height: auto;
+
+}
+
+.main-content-top {
+  width: 100%;
+  min-height: 150px;
+  display: inline-flex;
+  align-items: center;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.main-content-body {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pvi-card {
+  background-color: #e03517;
+  border-radius: 10px;
+  height: 150px;
+  color: #fff;
+  width: 33.3%;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 10px;
+  box-shadow: #111 0px 1px 5px 0px;
+  position: relative;
+}
+
+.pvi-card h4 {
+  margin: 0px;
+}
+
+.pvi-card .btn-control {
+  border: none;
+  background: #c9e1f5;
+  padding: 15px 20px;
+  width: 70%!important;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bolder;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #060e3d;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: greenyellow;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.login-wrap {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: #9E9E9E 2px 4px 10px 0px;
+  height: 75%;
+  width: 60%;
+}
+
+.login-left, .login-right {
+  display: block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-left {
+  font-weight: bold;
+}
+
+.input-details {
+  height: 260px;
+  overflow-y: scroll;
+}
+
+.login-left input {
+  width: 75%;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: #e6e6e6;
+  border-radius: 5px;
+  margin: 10px 0px;
+  font-size: 17px;
+  padding: 0 10px;
+  font-weight: 200;
+}
+
+.login-left input::placeholder {
+  font-size: 15px;
+}
+
+.login-left button {
+  border: none;
+  background: #e03517;
+  padding: 13px 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.login-left a {
+  color: #353a44;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.login-right {
+  background-color: #e03517;
+  color: #fff;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.signup-left {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.login-right > .login-content p {
+  margin: 45px 0px;
+}
+
+.login-right a {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 13px 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+}
+
+
+.login-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-logs-wrap ul li {
+  list-style-type: none;
+  width: 740px;
+  background-color: #efecec;
+  padding: 10px 20px;
+  margin: 50px 0px;
+  border-radius: 10px; 
+}
+
+.user-logs-wrap ul li button {
+  border: 1px solid #060e3d;
+  background: transparent;
+  padding: 13px 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 15px;
+  color: #060e3d;
+}
+
+.user-logs-wrap ul li div {
+  display: inline-flex;
+  width: 25%;
+  justify-content: center;
+}
+
+.notification-wrap ul li {
+  list-style-type: none;
+  width: 740px;
+  background-color: #efecec;
+  padding: 10px 20px;
+  margin: 50px 0px;
+  border-radius: 10px; 
+}
+
+.notification-wrap ul li button {
+  border: 1px solid #060e3d;
+  background: transparent;
+  padding: 13px 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 15px;
+  color: #060e3d;
+}
+
+.notification-wrap ul li div {
+  display: inline-flex;
+  width: 30%;
+  justify-content: center;
+}
+
+div.notification-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  background-color: #fff;
+  height: auto;
+  border: 1px solid #111;
+  border-radius: 15px;
+  text-align: left;
+  padding: 10px;
+}
+
+div.notification-popup ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.notification-popup button {
+  border: 1px solid #060e3d;
+  background: #060e3d;
+  padding: 8px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  margin: 10px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,14 +351,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
