@@ -20,6 +20,7 @@ class Overview extends Component {
 
         return (
             <div className="main-content">
+                <h1 className="app-title">intelligent master controller interface</h1>
                 <div className="main-content-top">
                     <PviCard title="GRID SOURCE" setActiveSource={setActiveSource} source="Grid" activeSource={activeSource} />
                     <PviCard title="RENEWABLE SOURCE" setActiveSource={setActiveSource} source="Renewable" activeSource={activeSource} />

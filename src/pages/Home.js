@@ -162,7 +162,6 @@ class Home extends Component {
             switchActiveTab={this.switchActiveTab} 
             activeTab={this.state.activeTab} 
             logOut={this.logOut} />
-            <h1>intelligentt master controller interface</h1>
           {
             
             activeTab === 'overview' && 

@@ -56,6 +56,7 @@ class UserLogs extends Component {
         const { names } = this.state;
         return (
             <div className="main-content">
+            <h1 className="app-title">intelligent master Operator Page</h1>
                 <h2>UserLogs</h2>
                 <div className="user-logs-wrap">
                     <ul>

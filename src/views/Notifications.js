@@ -27,6 +27,7 @@ class Notifications extends Component {
     render(){
         return (
             <div className="main-content">
+                <h1 className="app-title">intelligent master Notifications Page</h1>
                 {this.state.displayNotification && <NotificationPopup hideNotification={this.hideNotification}/>}
                 <h2>Notifications</h2>
                 <div className="notification-wrap">

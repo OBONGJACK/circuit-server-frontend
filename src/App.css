@@ -3,6 +3,37 @@ body {
   color: #353a44;
 }
 
+.app-title {
+  font-weight: bolder;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.app-title::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 90%;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #111;
+}
+
+.app-title::after {
+  content: '';
+  position: absolute;
+  bottom: -17px;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 3px solid #111;
+  border-radius: 50%;
+}
+
 .App {
   text-align: center;
 }
@@ -162,8 +193,8 @@ body {
   align-items: center;
   border-radius: 20px;
   box-shadow: #9E9E9E 2px 4px 10px 0px;
-  height: 75%;
-  width: 60%;
+  height: 500px;
+  min-width: max-content;
 }
 
 .login-left, .login-right {

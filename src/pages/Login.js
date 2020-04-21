@@ -25,7 +25,7 @@ class Login extends Component {
 
                 <div className="login-left">
                     <div className="login-content">
-                        <h1>Digital Master Control Interface</h1>
+                        <h1>Intelligent Master Controller Interface</h1>
                         <div></div>
                         <input type="mail" placeholder="Email" /><br />
                         <input type="password" placeholder="Password" /><br />

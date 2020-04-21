@@ -23,6 +23,7 @@ class Graphs extends Component {
 
         return (
             <div className="main-content">
+                <h1 className="app-title">intelligent master Graph Page</h1>
                 <h2>Graphs</h2>
                 <Line 
                     data={data}
