@@ -98,6 +98,7 @@ body {
   text-align: left;
   padding-left: 20px;
   display: flex;
+  transition: ease-in cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .side-panel ul li:hover {
