@@ -356,7 +356,6 @@ div.notification-popup button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
 .App-link {
@@ -370,4 +369,14 @@ div.notification-popup button {
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@media(max-width: 520px){
+  .login-wrap {
+    width: 95%;
+    height: 45%;
+  }
+
+
 }

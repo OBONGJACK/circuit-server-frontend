@@ -9,7 +9,7 @@ import Signup from './pages/Signup'
 
 import './App.css'
 
-class App extends Component{
+class App extends Component {
   render(){
     return (
       <HashRouter basename="/">
