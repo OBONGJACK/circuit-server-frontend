@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/circuit-server-frontend/static/css/main.52e1e2d7.chunk.css",
-    "main.js": "/circuit-server-frontend/static/js/main.25991570.chunk.js",
-    "main.js.map": "/circuit-server-frontend/static/js/main.25991570.chunk.js.map",
+    "main.css": "/circuit-server-frontend/static/css/main.98d1f98c.chunk.css",
+    "main.js": "/circuit-server-frontend/static/js/main.c8bba6dc.chunk.js",
+    "main.js.map": "/circuit-server-frontend/static/js/main.c8bba6dc.chunk.js.map",
     "runtime-main.js": "/circuit-server-frontend/static/js/runtime-main.98082c04.js",
     "runtime-main.js.map": "/circuit-server-frontend/static/js/runtime-main.98082c04.js.map",
-    "static/js/2.67a324f3.chunk.js": "/circuit-server-frontend/static/js/2.67a324f3.chunk.js",
-    "static/js/2.67a324f3.chunk.js.map": "/circuit-server-frontend/static/js/2.67a324f3.chunk.js.map",
+    "static/js/2.4c0e9565.chunk.js": "/circuit-server-frontend/static/js/2.4c0e9565.chunk.js",
+    "static/js/2.4c0e9565.chunk.js.map": "/circuit-server-frontend/static/js/2.4c0e9565.chunk.js.map",
     "index.html": "/circuit-server-frontend/index.html",
-    "precache-manifest.0c7417e649214f37b7d90ea7443da162.js": "/circuit-server-frontend/precache-manifest.0c7417e649214f37b7d90ea7443da162.js",
+    "precache-manifest.c940c481ebd6e8b2dd8d51077c60fa18.js": "/circuit-server-frontend/precache-manifest.c940c481ebd6e8b2dd8d51077c60fa18.js",
     "service-worker.js": "/circuit-server-frontend/service-worker.js",
-    "static/css/main.52e1e2d7.chunk.css.map": "/circuit-server-frontend/static/css/main.52e1e2d7.chunk.css.map",
-    "static/js/2.67a324f3.chunk.js.LICENSE.txt": "/circuit-server-frontend/static/js/2.67a324f3.chunk.js.LICENSE.txt"
+    "static/css/main.98d1f98c.chunk.css.map": "/circuit-server-frontend/static/css/main.98d1f98c.chunk.css.map",
+    "static/js/2.4c0e9565.chunk.js.LICENSE.txt": "/circuit-server-frontend/static/js/2.4c0e9565.chunk.js.LICENSE.txt",
+    "static/media/generator.png": "/circuit-server-frontend/static/media/generator.408cfd0d.png",
+    "static/media/grid.png": "/circuit-server-frontend/static/media/grid.bb35b4ca.png",
+    "static/media/renewable.png": "/circuit-server-frontend/static/media/renewable.986ad70e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.98082c04.js",
-    "static/js/2.67a324f3.chunk.js",
-    "static/css/main.52e1e2d7.chunk.css",
-    "static/js/main.25991570.chunk.js"
+    "static/js/2.4c0e9565.chunk.js",
+    "static/css/main.98d1f98c.chunk.css",
+    "static/js/main.c8bba6dc.chunk.js"
   ]
 }
