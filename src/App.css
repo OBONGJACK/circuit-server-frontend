@@ -376,6 +376,17 @@ div.notification-popup button {
   margin: 10px;
 }
 
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.images img {
+  height: 60px;
+  border-radius: 50%;
+  margin: 3px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

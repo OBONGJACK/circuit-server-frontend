@@ -1,6 +1,10 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 
+import Generator from '../assets/generator.png';
+import Grid from '../assets/grid.png';
+import Renewable from '../assets/renewable.png';
+
 class Signup extends Component {
     render(){
         return (
@@ -8,6 +12,7 @@ class Signup extends Component {
 
                 <div className="login-right signup-left">
                     <div className="login-content">
+                    
                         <h1>Welcome Back</h1>
                         <p>To keep connected with us please log in with your personal info</p>
                         <Link to="/login">SIGN IN</Link>
@@ -16,6 +21,11 @@ class Signup extends Component {
 
                 <div className="login-left">
                     <div className="login-content">
+                    <div className="images">
+                        <img src={Generator} alt="generator" />
+                        <img src={Grid} alt="Grid" />
+                        <img src={Renewable} alt="Renewable" />
+                    </div>
                         <h1>Create Account</h1>
                         <div></div>
                         <div className="input-details">

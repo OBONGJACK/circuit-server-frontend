@@ -8,6 +8,10 @@ import {Link} from 'react-router-dom'
 // Email Address
 // Phone Number
 
+import Generator from '../assets/generator.png';
+import Grid from '../assets/grid.png';
+import Renewable from '../assets/renewable.png';
+
 class Login extends Component {
     constructor(props){
         super(props)
@@ -25,6 +29,11 @@ class Login extends Component {
 
                 <div className="login-left">
                     <div className="login-content">
+                        <div className="images">
+                            <img src={Generator} alt="generator" />
+                            <img src={Grid} alt="Grid" />
+                            <img src={Renewable} alt="Renewable" />
+                        </div>
                         <h1>Intelligent Master Controller Interface</h1>
                         <div></div>
                         <input type="mail" placeholder="Email" /><br />
