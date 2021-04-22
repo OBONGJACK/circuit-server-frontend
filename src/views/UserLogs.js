@@ -33,35 +33,18 @@ class UserLogs extends Component {
                 }
             ]
         }
-
-        this.controlUser = this.controlUser.bind(this)
     }
 
-    controlUser(id){
-        this.setState({
-            names: this.state.names.map(name => {
-                if(name.id === id){
-                    return {
-                        id: name.id,
-                        name: name.name,
-                        status: !name.status
-                    }
-                } else {
-                    return name;
-                }
-            })
-        }, console.log(this.state))
-    }
     render(){
-        const { names } = this.state;
+        const { communities } = this.props;
         return (
             <div className="main-content">
-            <h1 className="app-title">intelligent master Operator Page</h1>
+            <h1 className="app-title">IMC Operator's History Page</h1>
                 <h2>UserLogs</h2>
                 <div className="user-logs-wrap">
                     <ul>
                         {
-                          names.map(name => {
+                          communities.map(name => {
                               return (
                                 <li key={name.id}>
                                     <div>
@@ -71,7 +54,7 @@ class UserLogs extends Component {
                                         {name.status? Device_Status('on') : Device_Status('off')}
                                     </div>
                                     <div>
-                                        <button onClick={() => this.controlUser(name.id)}>{name.status? 'Turn Off' : 'Turn On'}</button>
+                                        <button onClick={() => this.props.controlUser(name.id)}>{name.status? 'Turn Off' : 'Turn On'}</button>
                                     </div>
                                     <div>
                                         <button>History</button>

@@ -34,6 +34,8 @@ class Signup extends Component {
                             <input type="number" placeholder="Phone Number" /><br />
                             <input type="email" placeholder="*Email Address" /><br />
                             <input type="text" placeholder="*Identification Number" /><br />
+                            <input type="text" placeholder="*Location" /><br />
+                            <input type="date" placeholder="*Date of Birth" /><br />
                             <input type="password" placeholder="*Password" /><br />
                             <input type="password" placeholder="*Verify Password" /><br />
                         </div>
