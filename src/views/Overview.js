@@ -52,11 +52,11 @@ class Overview extends Component {
         </div>
         <div className="main-content-top">
           <PviCard
-            title="GENERATED ENERGY"
+            title="VOLTAGE"
             value={deviceStatus ? powerProduced : "---"}
           />
           <PviCard
-            title="CONSUMED ENERGY"
+            title="CURRENT"
             value={bulbStatus && deviceStatus ? powerConsumed : "---"}
           />
         </div>

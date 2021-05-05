@@ -39,7 +39,7 @@ class Home extends Component {
       activeTab: 'overview',
       activeSource: 'none',
       modal: {
-        show: false,
+        show: true,
         message: 'This is some sample mesage for the modal'
       },
       communities: [
