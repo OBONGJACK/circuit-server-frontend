@@ -11,7 +11,7 @@ class BulbStatus extends Component {
         return (
             <div className="device-card">
                 {bulbStatus && deviceStatus? <BulbOn /> : <BulbOFF />}
-                <h2>Status: {bulbStatus && deviceStatus? 'ON' : 'OFF'}</h2>
+                <h2>Supply Status: {bulbStatus && deviceStatus? 'ON' : 'OFF'}</h2>
                 <Button status={bulbStatus} switchStatus={switchBulbStatus} />
             </div>
         )
