@@ -6,16 +6,25 @@ class Notifications extends Component {
     constructor(props){
         super(props);
         this.state = {
-            displayNotification: false
+            displayNotification: false,
+            status: null, 
+            firstName: null, 
+            lastName: null, 
+            phoneNumber: null, 
+            email: null, 
+            ID: null, 
+            community: null, 
+            date: null
         }
 
         this.displayNotification = this.displayNotification.bind(this)
         this.hideNotification = this.hideNotification.bind(this)
     }
 
-    displayNotification(){
+    displayNotification(data){
         this.setState({
-            displayNotification: true
+            displayNotification: true,
+            ...data
         })
     }
 
@@ -28,7 +37,7 @@ class Notifications extends Component {
         return (
             <div className="main-content">
                 <h1 className="app-title">IMC Authentication Page  </h1>
-                {this.state.displayNotification && <NotificationPopup hideNotification={this.hideNotification}/>}
+                {this.state.displayNotification && <NotificationPopup hideNotification={this.hideNotification} data={this.state} />}
                 <h2>Notifications</h2>
                 <div className="notification-wrap">
                     <ul>

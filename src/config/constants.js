@@ -1,4 +1,6 @@
 export const constants = {
+    authServer: 'http://localhost:5000/',
+
     server:'https://api.thingspeak.com/',
     readChannelWriteKey:'3PHOQ8WWK84H2ZOI',
     readChannelReadKey:'C8UBSQMSSEF8QUHZ',

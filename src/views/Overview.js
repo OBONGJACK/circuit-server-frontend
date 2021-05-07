@@ -57,7 +57,7 @@ class Overview extends Component {
           />
           <PviCard
             title="CURRENT"
-            value={bulbStatus && deviceStatus ? powerConsumed : "---"}
+            value={deviceStatus ? powerConsumed : "---"}
           />
         </div>
         <div className="main-content-body">

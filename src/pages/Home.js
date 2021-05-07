@@ -69,33 +69,7 @@ class Home extends Component {
             status: false
         }
       ],
-      notifications: [
-        {
-          title: 'AFIKPO Signed Up',
-          date: '22/02/2020',
-          id: 1
-        },
-        {
-          title: 'AMAZIRI Signed Up',
-          date: '23/02/2020',
-          id: 2
-        },
-        {
-          title: 'OZZIA Signed Up',
-          date: '12/02/2020',
-          id: 3
-        },
-        {
-          title: 'ENOHIA Signed Up',
-          date: '02/02/2020',
-          id: 4
-        },
-        {
-          title: 'UNWANA Signed Up',
-          date: '22/03/2020',
-          id: 5
-        }
-      ],
+      notifications: [],
       bulbStatus: true,
       deviceStatus: true,
       voltage: 5.00,
@@ -112,10 +86,29 @@ class Home extends Component {
     this.controlUser = this.controlUser.bind(this)
     this.varyGenerated = this.varyGenerated.bind(this)
     this.fetchState = this.fetchState.bind(this)
+    this.fetchNotifications = this.fetchNotifications.bind(this)
   }
 
   componentDidMount(){
+    // Check to see if user is logged in
+    if(!localStorage.getItem('token')){
+      this.props.history.push('login')
+    }
     this.fetchState()
+    this.fetchNotifications()
+  }
+
+  componentDidUpdate(){
+    if(!localStorage.getItem('token')){
+      this.props.history.push('login')
+    }
+  }
+
+  fetchNotifications(){
+    axios.get(constants.authServer + 'api/auth/users').then(res => {
+      console.log(res.data.users);
+      this.setState({notifications: [...res.data.users]})
+    })
   }
 
   fetchState(){
@@ -276,11 +269,22 @@ class Home extends Component {
     
     this.setState({
       bulbStatus: !this.state.bulbStatus,
+    }, () => {
+      this.setState({
+        ...this.state,
+        communities: this.state.communities.map(item => {
+          return {
+            ...item,
+            status: this.state.bulbStatus
+          }
+        })
+      })
     })
 
   }
 
   logOut(){
+    localStorage.removeItem('token');
     this.props.history.push('/login');
   }
 
